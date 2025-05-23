@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VoxGenie</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+  <h1>VoxGenie - Voice Assistant</h1>
+  <button onclick="startListening()">🎤 Talk to VoxGenie</button>
+  <p id="result">Click the button and speak</p>
+</body>
+</html>
