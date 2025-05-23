@@ -7,8 +7,10 @@
 <script src="{{ url_for('static', filename='app.js') }}"></script>
 </head>
 <body>
-  <h1>VoxGenie - Voice Assistant</h1>
-  <button onclick="startListening()">🎤 Talk to VoxGenie</button>
-  <p id="result">Click the button and speak</p>
+  <<h1>VoxGenie - Voice Assistant</h1>
+<div id="wave" class="wave"></div>
+<button onclick="startListening()">🎙️ Talk to VoxGenie</button>
+<p id="status">Click the button and speak</p>
+<p id="response-text"></p>
 </body>
 </html>

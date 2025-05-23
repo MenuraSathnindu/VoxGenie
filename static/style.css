@@ -14,3 +14,38 @@ button {
   border: none;
   border-radius: 10px;
 }
+.wave {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00c9a7;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.wave.listening {
+  animation: pulse 1.2s infinite;
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+#response-text {
+  font-size: 18px;
+  color: #00ffe5;
+  margin-top: 10px;
+}
